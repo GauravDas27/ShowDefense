@@ -94,15 +94,15 @@ public function SetSoldierStats(optional string Health	 = "",
 		mc.QueueString(m_strDodgeLabel);
 		mc.QueueString(Dodge);
 	}
-	if( Tech != "" )
-	{
-		mc.QueueString(m_strTechLabel);
-		mc.QueueString(Tech);
-	}
 	if( Psi != "" )
 	{
 		mc.QueueString( class'UIUtilities_Text'.static.GetColoredText(m_strPsiLabel, eUIState_Psyonic) );
 		mc.QueueString( class'UIUtilities_Text'.static.GetColoredText(Psi, eUIState_Psyonic) );
+	}
+	else if( Tech != "" )
+	{
+		mc.QueueString(m_strTechLabel);
+		mc.QueueString(Tech);
 	}
 	if( Will != "" )
 	{
