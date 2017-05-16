@@ -1,0 +1,1 @@
+﻿Shows the defense stat on the unit info box in the armory.

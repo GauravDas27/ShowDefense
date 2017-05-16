@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8f2f45ab-bd59-4436-9e2f-8b8587a9e760}</ProjectGuid>
+    <Guid>8f2f45ab-bd59-4436-9e2f-8b8587a9e760</Guid>
+    <Name>ShowDefense</Name>
+    <Description>Shows the defense stat on the unit info box in the armory.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>ShowDefense</AssemblyName>
+    <RootNamespace>ShowDefense</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\ShowDefense\" />
+    <Folder Include="Src\ShowDefense\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Src\ShowDefense\Classes\UISoldierHeader_ShowDefense.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
